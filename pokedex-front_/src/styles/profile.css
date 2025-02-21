@@ -1,0 +1,111 @@
+.profile-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ffcb05;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcb05;
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #d1d1d1;
+}
+
+.profile-info strong {
+    color: #ffcb05;
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.profile-button.edit {
+    background: #4c8bf5;
+    color: white;
+}
+
+.profile-button.edit:hover {
+    background: #3672d6;
+}
+
+.profile-button.delete {
+    background: red;
+    color: white;
+}
+
+.profile-button.delete:hover {
+    background: darkred;
+}
+
+.profile-button.cancel {
+    background: gray;
+    color: white;
+}
+
+.profile-button.cancel:hover {
+    background: #555;
+}
+
+.profile-form input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #1e1e1e;
+    color: white;
+}
+
+.profile-form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #ffcb05;
+}
+
+.pokemon-list {
+    list-style: none;
+    padding: 0;
+}
+
+.pokemon-list li {
+    background: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.pokemon-list li:hover {
+    background: #444;
+}
