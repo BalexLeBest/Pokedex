@@ -51,12 +51,12 @@ pokedex/
 
 ## Installation et Lancement
 
-### 🛠️ Prérequis
+### Prérequis
 - **Node.js** v16+
 - **MongoDB** (local ou cloud)
 - **npm** ou **yarn**
 
-### ⚙️ Installation du Backend
+### Installation du Backend
 1. **Cloner le projet**  
    ```sh
    git clone https://github.com/BalexLeBest/Pokedex.git
