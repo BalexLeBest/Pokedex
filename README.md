@@ -69,8 +69,8 @@ pokedex/
 3. **Configurer l’environnement**  
    Créer un fichier **`.env`** et y ajouter :
    ```
-   MONGO_URI=mongodb://localhost:27017/pokedex
-   TOKEN_SECRET=supersecret
+   MONGO_URI=mongodb://localhost:27017/td
+   TOKEN_SECRET=0a9aa4b49857f594eacb04e3df6b53a60e6cb909166d0757f694a0e903fa9b1891e703093b53f6ba5286c4dd38c71df4d9a6ae136e4384abed6fcdafd786c196
    PORT=3000
    ```
 4. **Démarrer le serveur**  
