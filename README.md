@@ -92,7 +92,7 @@ pokedex/
    ```
 3. **Lancer l’application**  
    ```sh
-   npm start
+   npm run dev
    ```
    L’interface sera accessible sur `http://localhost:5173` (ou un autre port si déjà utilisé).
 
