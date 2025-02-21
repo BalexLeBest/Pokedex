@@ -60,7 +60,7 @@ pokedex/
 1. **Cloner le projet**  
    ```sh
    git clone https://github.com/BalexLeBest/Pokedex.git
-   cd pokedex/backend
+   cd pokedex/pokedex-api
    ```
 2. **Installer les dépendances**  
    ```sh
