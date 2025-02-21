@@ -84,7 +84,7 @@ pokedex/
 ### 🎨 Installation du Frontend
 1. **Se déplacer dans le dossier frontend**  
    ```sh
-   cd ../frontend
+   cd pokedex-front
    ```
 2. **Installer les dépendances**  
    ```sh
