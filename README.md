@@ -59,7 +59,7 @@ pokedex/
 ### ⚙️ Installation du Backend
 1. **Cloner le projet**  
    ```sh
-   git clone https://github.com/tonrepo/pokedex.git
+   git clone https://github.com/BalexLeBest/Pokedex.git
    cd pokedex/backend
    ```
 2. **Installer les dépendances**  
@@ -98,7 +98,7 @@ pokedex/
 
 ---
 
-## 🌍 API - Routes Disponibles
+## 🌍 API - Routes Disponibles (Visible dans pokemonRouter.js et trainerRouter.js)
 
 ### 📌 Authentification
 - `POST /api/auth/register` - Inscription
@@ -145,19 +145,6 @@ Le script **`resources/import_pokemon.js`** importe automatiquement **1025 Poké
 ## 🎮 Interface Gameboy
 - ⬆️🔽 : Naviguer entre les Pokémon
 - 🔄 **Bouton A/B** : Voir la fiche d'un Pokémon
-
----
-
-## 🚀 Contribution
-1. **Fork le repo**
-2. **Crée une branche** (`git checkout -b feature-nouvelle-fonction`)
-3. **Ajoute tes modifications** (`git commit -m "Ajout d'une feature"`)
-4. **Fais une pull request** 🎉
-
----
-
-## 📢 Contact & Support
-**Problème ?** Ouvre une **issue** ou contacte-moi sur **Discord/GitHub** !
 
 🚀 **Attrapez-les tous !** 🎮🔥
 
