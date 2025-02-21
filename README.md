@@ -1,6 +1,6 @@
-# 🏆 Pokédex - Projet Fullstack
+# Pokédex - Projet Fullstack
 
-## 📌 Description du Projet
+## Description du Projet
 Ce projet est une implémentation complète d'un **Pokédex** interactif permettant aux utilisateurs de :
 - Naviguer dans la liste des Pokémon
 - Consulter leurs **types, descriptions, images et régions d'apparition**
@@ -14,7 +14,7 @@ Le projet est divisé en **deux parties principales** :
 
 ---
 
-## 📂 Structure du Projet
+## Structure du Projet
 ```
 pokedex/
 ├── backend/                # API Node.js + Express + MongoDB
@@ -49,7 +49,7 @@ pokedex/
 
 ---
 
-## 🚀 Installation et Lancement
+## Installation et Lancement
 
 ### 🛠️ Prérequis
 - **Node.js** v16+
@@ -81,7 +81,16 @@ pokedex/
 
 ---
 
-### 🎨 Installation du Frontend
+### Lancer le serveur MongoDB
+Allez dans `MongoDB_portable` et exécutez la commande suivante :
+```bash
+.\bin\mongod.exe --dbpath data
+```
+Laissez le serveur tourner.
+
+---
+
+### Installation du Frontend
 1. **Se déplacer dans le dossier frontend**  
    ```sh
    cd pokedex-front
@@ -98,39 +107,40 @@ pokedex/
 
 ---
 
-## 🌍 API - Routes Disponibles (Visible dans pokemonRouter.js et trainerRouter.js)
+## API - Routes Disponibles (Visible dans pokemonRouter.js et trainerRouter.js)
 
-### 📌 Authentification
+### Authentification
 - `POST /api/auth/register` - Inscription
 - `POST /api/auth/login` - Connexion
-- `GET /api/auth/checkUser` - Vérifier connexion
+- `GET /api/auth/checkUser` - Vérifier l'état de connexion
 
-### 🔥 Pokémon
-- `GET /api/pokemon` - Liste des Pokémon
-- `GET /api/pokemon/:id` - Infos d'un Pokémon
+### Pokémon
+- `GET /api/pokemon` - Récupérer tous les Pokémon
+- `GET /api/pokemon/:id` - Récupérer un Pokémon par ID
 - `POST /api/pokemon` - Ajouter un Pokémon (ADMIN)
 - `PUT /api/pokemon/:id` - Modifier un Pokémon (ADMIN)
 - `DELETE /api/pokemon/:id` - Supprimer un Pokémon (ADMIN)
+- `POST /api/pokemon/pkmn/region` - Ajouter une région à un Pokémon (ADMIN)
+- `DELETE /api/pokemon/pkmn/region/:pkmnID/:regionName` - Supprimer une région d’un Pokémon (ADMIN)
 
-### 👤 Dresseur
-- `GET /api/trainer/me` - Récupérer son profil
+### Dresseurs
+- `GET /api/trainer/me` - Récupérer son propre profil
 - `PUT /api/trainer` - Modifier son profil
-- `DELETE /api/trainer/:id` - Supprimer son compte
-- `POST /api/trainer/mark` - Marquer un Pokémon vu/capturé
-
+- `DELETE /api/trainer/:trainerId` - Supprimer un compte (ADMIN)
+- `POST /api/trainer/mark` - Marquer un Pokémon comme vu ou capturé
 ---
 
-## 📚 Importer tous les Pokémon
+## Importer tous les Pokémon
 
 Le script **`resources/import_pokemon.js`** importe automatiquement **1025 Pokémon**.
 
-### 🛠️ Utilisation du script
-1. **Démarrer l'API** (`npm run dev`)
-2. **Exécuter le script** :
-   ```sh
-   node resources/import_pokemon.js
-   ```
-3. **Les Pokémon sont ajoutés à MongoDB**.
+## Importer tous les Pokémon
+1. Aller sur `http://localhost:3000/`
+2. Faites `F12` pour ouvrir la console développeur
+3. Allez dans l'onglet `Console`
+4. Copiez le script contenu dans `Ressources/script_add_pkmn_to_db.js`
+5. Collez-le dans la console et appuyez sur `Entrée`
+6. Les Pokémon sont ajoutés à MongoDB.
 
 ---
 
@@ -139,12 +149,3 @@ Le script **`resources/import_pokemon.js`** importe automatiquement **1025 Poké
 - **Frontend** : React, React Router
 - **Auth** : JWT (JSON Web Tokens)
 - **UI** : CSS, animations et interface Gameboy
-
----
-
-## 🎮 Interface Gameboy
-- ⬆️🔽 : Naviguer entre les Pokémon
-- 🔄 **Bouton A/B** : Voir la fiche d'un Pokémon
-
-🚀 **Attrapez-les tous !** 🎮🔥
-
