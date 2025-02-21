@@ -134,7 +134,6 @@ Laissez le serveur tourner.
 
 Le script **`resources/import_pokemon.js`** importe automatiquement **1025 Pokémon**.
 
-## Importer tous les Pokémon
 1. Aller sur `http://localhost:3000/`
 2. Faites `F12` pour ouvrir la console développeur
 3. Allez dans l'onglet `Console`
