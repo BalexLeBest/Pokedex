@@ -143,7 +143,7 @@ Le script **`resources/import_pokemon.js`** importe automatiquement **1025 Poké
 
 ---
 
-## 🛠️ Technologies Utilisées
+## Technologies Utilisées
 - **Backend** : Node.js, Express, MongoDB, Mongoose
 - **Frontend** : React, React Router
 - **Auth** : JWT (JSON Web Tokens)
